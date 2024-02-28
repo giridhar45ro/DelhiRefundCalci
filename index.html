@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="form-header">
+            <h2>Calculator</h2>
+        </div>
+        <form id="discount-form">
+            <div class="form-group" id="registered-date-div">
+                <label for="registered-date">Registered Date</label>
+                <input type="date" id="registered-date" name="registered-date" value="2024-02-28">
+            </div>
+            <div class="form-group" id="category-div">
+                <input type="radio" name="category" id="category-1" value="yamuna" checked="checked">
+                <label for="category-1">Yamuna</label>
+                <input type="radio" name="category" id="category-2" value="ganga">
+                <label for="category-2">Ganga</label>
+                <input type="radio" name="category" id="category-3" value="bhagirathi">
+                <label for="category-3">Bhagirathi</label>
+                <input type="radio" name="category" id="category-4" value="bramhaputra">
+                <label for="category-4">Bramhaputra</label>
+                <input type="radio" name="category" id="category-5" value="manasarovar">
+                <label for="category-5">Manasarovar</label>
+                <input type="radio" name="category" id="category-6" value="kailash">
+                <label for="category-6">Kailash</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" name="program" id="prog-1" value="EOE" checked="checked">
+                <label for="prog-1">EOE</label>
+                <input type="radio" name="program" id="prog-2" value="ENG">
+                <label for="prog-2">ENG</label>
+                <input type="radio" name="program" id="prog-3" value="REGIONAL">
+                <label for="prog-3">VERNACULAR</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" name="status" id="status-1" value="STARTED" checked="checked">
+                <label for="status-1">STARTED</label>
+                <input type="radio" name="status" id="status-2" value="NOTSTARTED">
+                <label for="status-2">NOT STARTED</label>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+            <div class="discount-message" display="none"></div> 
+            <div class="discounted-price">0</div>
+            <div class="error-message" display="none"></div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
